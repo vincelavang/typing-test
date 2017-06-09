@@ -1,1 +1,13 @@
+body {
+  margin: 0 auto;
+}
+#header {
+  text-align: center;
+}
 
+#content {
+  font-size: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  color: #9a999b;
+}
