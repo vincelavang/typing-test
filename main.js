@@ -5,3 +5,7 @@ var chars = string.split('')
 for (var i = 0; i < string.length; i++) {
   $content.innerHTML += '<span>' + string[i] + '</span>'
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+  $content.querySelector('span').classList.add('bold')
+})
