@@ -11,3 +11,8 @@ body {
   padding-left: 10px;
   color: #9a999b;
 }
+
+.bold {
+  font-weight: bold;
+  color: blue;
+}
