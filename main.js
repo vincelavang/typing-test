@@ -9,3 +9,13 @@ for (var i = 0; i < string.length; i++) {
 document.addEventListener('DOMContentLoaded', function() {
   $content.querySelector('span').classList.add('bold')
 })
+
+document.addEventListener('keydown', function(event) {
+  var $bold = document.querySelector('.bold')
+  var $next = $bold.nextSibling
+  if (event.key === $bold.textContent) {
+    $bold.classList.remove('bold')
+    $bold.classList.add('correct')
+    $next.classList.add('bold')
+  }
+})
