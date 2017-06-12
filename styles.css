@@ -20,3 +20,11 @@ body {
 .correct {
   color: teal;
 }
+
+.wrong {
+  color: red;
+}
+
+h3 {
+  text-align: center;
+}
