@@ -20,3 +20,7 @@ body {
 .correct {
   color: teal;
 }
+
+.wrong {
+  color: red;
+}

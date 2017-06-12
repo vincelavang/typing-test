@@ -27,6 +27,7 @@ document.addEventListener('keydown', function(event) {
   }
   else {
   errorCount++
+  $bold.classList.add('wrong')
   }
 })
 
