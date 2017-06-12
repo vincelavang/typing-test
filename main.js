@@ -1,6 +1,5 @@
 var $content = document.querySelector('#content')
 var string = '"Back in my heyday, I would kill Michael Jordan one-on-one." - LaVar Ball'
-var chars = string.split('')
 
 for (var i = 0; i < string.length; i++) {
   $content.innerHTML += '<span>' + string[i] + '</span>'
@@ -16,6 +15,19 @@ document.addEventListener('keydown', function(event) {
   if (event.key === $bold.textContent) {
     $bold.classList.remove('bold')
     $bold.classList.add('correct')
-    $next.classList.add('bold')
+    if ($next !== null) {
+      $next.classList.add('bold')
+    } else {
+      var $container = document.querySelector('.container')
+      var test = "Test complete!"
+      var final = renderTest(test)
+    	$container.appendChild(final)
+    }
   }
 })
+
+function renderTest(score) {
+  var $test = document.createElement('h3')
+  $test.textContent = score
+  return $test
+}
