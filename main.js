@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function() {
   $content.querySelector('span').classList.add('bold')
 })
 
-document.addEventListener('keydown', function(event) {
+document.addEventListener('keypress', function(event) {
   var $bold = document.querySelector('.bold')
   var $next = $bold.nextSibling
   if (event.key === $bold.textContent) {
